@@ -1,0 +1,51 @@
+/* modal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Darker background for better contrast */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px; /* Increased padding for a spacious feel */
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+    text-align: center;
+    width: 400px; /* Fixed width for better alignment */
+}
+
+.modal-content h2 {
+    margin-bottom: 20px; /* Spacing below the title */
+    font-size: 24px; /* Larger font size for the title */
+    color: #333; /* Dark color for better readability */
+}
+
+.modal-content button {
+    background: #4CAF50; /* Green background for the button */
+    color: white; /* White text for contrast */
+    border: none;
+    border-radius: 5px; /* Slightly rounded corners */
+    padding: 10px 20px; /* More padding for better clickability */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease; /* Smooth transition */
+    margin: 5px; /* Margin around buttons */
+}
+
+.modal-content button:hover {
+    background: #45a049; /* Darker green on hover */
+}
+
+.modal-content button:last-child {
+    background: #f44336; /* Red background for the close button */
+}
+
+.modal-content button:last-child:hover {
+    background: #e53935; /* Darker red on hover */
+}

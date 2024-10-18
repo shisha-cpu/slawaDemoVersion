@@ -1,0 +1,181 @@
+
+
+.products {
+    padding: 40px;
+
+    min-height: 100vh;
+}
+
+.products-name {
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+    /* color: #ffffff; */
+}
+
+.loading {
+    text-align: center;
+    font-size: 24px;
+    color: #666;
+}
+
+.error {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 240px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-image-container {
+    width: 115%;
+    padding-top: 75%; /* 4:3 Aspect Ratio */
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.1);
+}
+
+.product-details {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-name {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.product-card:hover .product-name {
+    color: #007BFF;
+}
+
+.product-article,
+.product-price {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+    .products-name {
+        font-size: 35px;
+    }
+
+    .product-name {
+        font-size: 1.2rem;
+    }
+
+    .product-article,
+    .product-price {
+        font-size: 0.9rem;
+    }
+}
+.product-btn{
+    background-color: #007BFF;
+    border: 0;
+    font-size: 25px;
+    font-weight: 550;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.search-input {
+    margin:  0 auto;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #007BFF;
+    border-radius: 25px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-input:focus {
+    border-color: #0056b3;
+}
+.products-serch-input{
+    display: flex;
+    justify-content: center;
+}/* Стили для поля ввода количества товара и кнопок */
+.quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.quantity-input {
+    width: 60px; /* Ширина поля ввода */
+    height: 40px; /* Высота поля ввода */
+    text-align: center; /* Центрирование текста */
+    border: 2px solid #007BFF; /* Цвет рамки */
+    border-radius: 5px; /* Скругление углов */
+    font-size: 16px; /* Размер шрифта */
+    margin: 0 10px; /* Отступы по бокам */
+}
+
+.quantity-button {
+    background-color: #007BFF; /* Цвет фона кнопки */
+    border: none; /* Без рамки */
+    color: white; /* Цвет текста */
+    padding: 10px 15px; /* Отступы внутри кнопки */
+    border-radius: 5px; /* Скругление углов */
+    cursor: pointer; /* Курсор в виде указателя */
+    font-size: 18px; /* Размер шрифта */
+    transition: background-color 0.3s; /* Плавный переход для фона */
+}
+
+.quantity-button:hover {
+    background-color: #0056b3; /* Цвет фона при наведении */
+}

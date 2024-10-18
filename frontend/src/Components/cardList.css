@@ -1,0 +1,74 @@
+.cardList-container {
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 90px;
+    margin: 0 30px;
+
+    /* border:  1x solid green; */
+}
+
+
+/* .background-animation {
+
+
+    background: linear-gradient(120deg, rgba(175, 205, 232, 0.6), rgba(255, 245, 157, 0.6));
+    animation: gradient-animation 10s ease infinite;
+    z-index: -1;
+} */
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.cardList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+   
+}
+.product-line {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.product {
+    height: 180px;
+    width: 200px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+padding-bottom: 30px;
+padding-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.product:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, rgba(255, 245, 157, 0.8), rgba(175, 205, 232, 0.8));
+}

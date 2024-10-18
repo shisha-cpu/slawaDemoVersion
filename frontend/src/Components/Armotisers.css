@@ -1,0 +1,61 @@
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Стили для кнопок слайдера */
+.slider-button {
+    background-color: #007bff; /* Цвет кнопки */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 18px; 
+}
+
+/* Стили для контейнера автомобилей */
+.cars-container {
+    display: flex;
+    justify-content: center; /* Центрирование карточек */
+    align-items: center;
+}
+
+
+.car-card {
+   width: 250px; 
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+.car-card p {
+    font-size: 20px;
+    font-weight: 550;
+    color: #333;
+    margin: 0;
+}
+
+/* Стили для карточки товаров */
+.product-card {
+    flex: 1 1 300px; 
+    margin-right: 10px;
+}
+.cars-container {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.4s ease-in-out;
+} 
