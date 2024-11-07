@@ -72,7 +72,7 @@ export default function Armotisers() {
     const handleClick = (item) => {
         const qty = Math.max(4, quantity[item.арктикул] || 1); // Минимум 3 единицы товара
         alert(`Товар "${item.наименование}" успешно добавлен в корзину, количество: ${qty}`);
-        axios.post(`http://localhost:4444/addBasket/${user._id}`, { item, qty })
+        axios.post(`http://89.169.39.144:4444/addBasket/${user._id}`, { item, qty })
             .then(res => {
                 console.log(res.data);
                 dispatch(updateBasket(res.data));

@@ -17,7 +17,7 @@ export default function Basket() {
     useEffect(() => {
         const fetchBasketProducts = async () => {
             try {
-                const response = await axios.get(`http://localhost:4444/userBasket/${user._id}`);
+                const response = await axios.get(`http://89.169.39.144:4444/userBasket/${user._id}`);
                 setProducts(response.data);
                 calculateTotal(response.data);
             } catch (error) {
@@ -61,7 +61,7 @@ export default function Basket() {
 
     const handleOrder = async () => {
         try {
-            await axios.delete(`http://localhost:4444/userBasket/${user._id}`);
+            await axios.delete(`http://89.169.39.144:4444/userBasket/${user._id}`);
             setProducts([]); 
             setTotalPrice(0); 
             setIsModalOpen(true);
