@@ -8,17 +8,17 @@
     border-radius: 90px;
     margin: 0 30px;
 
-    /* border:  1x solid green; */
+    border:  1x solid green;
 }
 
 
-/* .background-animation {
+.background-animation {
 
 
     background: linear-gradient(120deg, rgba(175, 205, 232, 0.6), rgba(255, 245, 157, 0.6));
     animation: gradient-animation 10s ease infinite;
     z-index: -1;
-} */
+}
 
 @keyframes gradient-animation {
     0% {
@@ -37,6 +37,8 @@
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+
+ 
 }
 .product{
     display: flex;
