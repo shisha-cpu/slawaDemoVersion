@@ -151,7 +151,7 @@
 .product-btn {
     width: 100%;
     padding: 10px;
-    background-color: #007bff; /* Primary button color */
+    background-color: rgb(15, 172, 15); /* Primary button color */
     color: white; /* White text */
     border: none; /* No border */
     border-radius: 5px; /* Rounded corners */
